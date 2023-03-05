@@ -16,7 +16,7 @@ use App\Http\Controllers\ProdukController;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/home', function () {
+Route::get('/home1', function () {
     return view('home');
 });
 Auth::routes();
@@ -40,3 +40,4 @@ Route::prefix('program') -> group (function () {
 
 
 Route::get('/produk', [ProdukController::class, 'index']);
+Route::get('/produk', [ProgramaController::class, 'index']);
