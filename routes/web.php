@@ -22,22 +22,20 @@ Route::get('/home1', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/news', [App\Http\Controllers\NewsController::class, 'index'])->name('news');
 
 
 Route::prefix('produk') -> group (function () {
     Route::get('/1', [ProdukController::class, 'index1']);
     Route::get('/2', [ProdukController::class, 'index2']);
-    Route::get('/3', [ProdukController::class, 'index3']);
 }) -> name('produk');
 
 Route::prefix('program') -> group (function () {
-    Route::get('/1', [ProdukController::class, 'index1']);
-    Route::get('/2', [ProdukController::class, 'index2']);
-    Route::get('/3', [ProdukController::class, 'index3']);
+    Route::get('/1', [ProgramController::class, 'index1']);
+    Route::get('/2', [ProgramController::class, 'index2']);
 }) -> name('program');
 
 
 Route::get('/produk', [ProdukController::class, 'index']);
-Route::get('/produk', [ProgramaController::class, 'index']);
+Route::get('/program', [ProgramController::class, 'index']);

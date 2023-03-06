@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
 @section('index')
-    <h1>Ini adalah Home</h1>
+    <img src="https://i.postimg.cc/zX7QjZVL/Free-Vector-Welcome-neon-lettering-on-tablet-invitation.jpg">
+    <style>
+        img{
+            width: 1590px;
+            height: 800px;
+        }
+    </style>
+
 @endsection

@@ -15,19 +15,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="/home1">Home</a>
+              <a class="nav-link px-lg-1" href="/home1">Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="/news">News</a>
+              <a class="nav-link px-lg-1" href="/news">News</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link " href="/produk">Produk</a>
+              <a class="nav-link px-lg-1" href="/produk">Produk</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="/program">Program</a>
+                <a class="nav-link px-lg-1" href="/program">Program</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link " href="/about">About</a>
+                <a class="nav-link px-lg-1" href="/about">About</a>
+              </li>
+              <li class="nav-item px-lg-1">
+                <a class="nav-link px-lg-1" href="/about">Contact Us</a>
               </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -36,10 +39,26 @@
           </form>
         </div>
       </nav>
+
+
+
+
       <style>
-        .nav-item {
-        font-size: 25px;
-        font-weight: bold;
+      
+        .nav-link-active,
+        .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+          background-color: #135FA9 !important;
+          border-color: #135FA9 !important;
+          color: white !important;
+          border-radius: 4px !important;
+        }
+
+        .navbar-aside .navbar-nav .nav-link:focus, .navbar-aside  .navbar-nav .nav-link:hover {
+          background-color: transparent !important;
+          border-color: transparent !important;
+        }
+        .card mb-3{
+           height: 50%;
         }
 
         </style>

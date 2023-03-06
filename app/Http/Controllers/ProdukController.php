@@ -13,5 +13,10 @@ public function index()
     return view('product');
     
 }
+public function index1()
+{
+    return view('product');
+    
+}
 
 }
